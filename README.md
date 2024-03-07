@@ -1,5 +1,7 @@
 # Private LLM on AWS
 
+**Attention**: The code in this repository is intended for experimental use only and is not fully tested, documented, or supported by SingleStore. Visit the [SingleStore Forums](https://www.singlestore.com/forum/) to ask questions about this repository.
+
 In this repository you'll find the necessary documentation and code to properly deploy a Private LLM on top of AWS that is backed by SingleStoreDB. This LLM is fully capable Retrieval Augmented Generation (RAG) and can be fed custom business context using SingleStoreDB's Pipeline functions. 
 
 The basic process that this Terraform module uses is to deploy models using SageMaker, front them with FastAPI, and store all interactions inside of SingleStoreDB. SingleStoreDB will also provide additional context to the application that you're working with to ensure that you're able to build your business logic into the application.
